@@ -1,8 +1,9 @@
 # HTTPS overlay. Use TOGETHER with the base prod file:
 #   docker compose -f docker-compose.prod.yml -f docker-compose.caddy.yml --env-file .env up -d --build
 #
-# Caddy terminates HTTPS and proxies to frontend/backend on the internal
-# Docker network, so they no longer need to publish 3000/3001 publicly.
+# Caddy terminates HTTPS and proxies to all services on the shared Docker network.
+# AIInfra services join via the external network "aiinfra_default" (created when
+# you start AIInfraLearning with docker compose -f docker-compose.prod.yml up -d).
 services:
   caddy:
     image: caddy:2-alpine
@@ -11,22 +12,26 @@ services:
       - frontend
       - backend
     environment:
-      # e.g. SITE_ADDRESS=yourdomain.com  or  yourdomain.com:8443
       SITE_ADDRESS: ${SITE_ADDRESS:?SITE_ADDRESS is required (your domain, optionally :port)}
     ports:
       - "80:80"
       - "443:443"
-      # High port to use HTTPS while ICP 备案 is pending (80/443 may be blocked).
-      # Remove this line once 备案 is approved and you switch back to 443.
       - "8443:8443"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - caddy-data:/data
       - caddy-config:/config
-
-  # When fronted by Caddy, the app ports don't need public exposure.
-  # (Leaving them published is harmless for now; tighten later if you want.)
+    networks:
+      - default
+      - aiinfra_net
 
 volumes:
   caddy-data:
   caddy-config:
+
+networks:
+  aiinfra_net:
+    external: true
+    # Created by AIInfraLearning stack. Run once to create it:
+    #   docker network create aiinfra_net
+    # Then start AIInfraLearning with: --network aiinfra_net (see its docker-compose.prod.yml)

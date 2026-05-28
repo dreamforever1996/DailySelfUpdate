@@ -8,13 +8,32 @@
 # meanwhile. Once 备案 passes, https://<domain> (443) just works. The cert is
 # obtained once (via port 80 ACME) and reused on the high port too.
 #
-# Path routing: /api/* → backend, everything else → frontend (same-origin).
+# Path routing:
+#   /api/*          → DailySelfUpdate backend (backend:3001)
+#   /aiinfra/api/*  → AIInfra backend (aiinfra-backend:8000)
+#   /aiinfra*       → AIInfra frontend (aiinfra-frontend:3000)
+#   /*              → DailySelfUpdate frontend (frontend:3000)
 
 {$SITE_ADDRESS} {
 	encode gzip
+
+	# DailySelfUpdate API
 	handle /api/* {
 		reverse_proxy backend:3001
 	}
+
+	# AIInfra Learning Platform API  — strip /aiinfra prefix before proxying
+	handle /aiinfra/api/* {
+		uri strip_prefix /aiinfra
+		reverse_proxy aiinfra-backend:8000
+	}
+
+	# AIInfra Learning Platform frontend
+	handle /aiinfra* {
+		reverse_proxy aiinfra-frontend:3000
+	}
+
+	# DailySelfUpdate frontend (catch-all)
 	handle {
 		reverse_proxy frontend:3000
 	}
