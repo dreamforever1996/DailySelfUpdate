@@ -19,7 +19,7 @@
 
 	# DailySelfUpdate API
 	handle /api/* {
-		reverse_proxy backend:3001
+		reverse_proxy dailyselfupdate-backend-1:3001
 	}
 
 	# AIInfra Learning Platform API  — strip /aiinfra prefix before proxying
@@ -35,6 +35,6 @@
 
 	# DailySelfUpdate frontend (catch-all)
 	handle {
-		reverse_proxy frontend:3000
+		reverse_proxy dailyselfupdate-frontend-1:3000
 	}
 }
