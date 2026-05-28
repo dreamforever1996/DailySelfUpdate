@@ -22,7 +22,7 @@ services:
       - caddy-data:/data
       - caddy-config:/config
     networks:
-      - default
+      - dailyselfupdate_default
       - aiinfra_net
 
 volumes:
@@ -30,8 +30,7 @@ volumes:
   caddy-config:
 
 networks:
+  dailyselfupdate_default:
+    external: true
   aiinfra_net:
     external: true
-    # Created by AIInfraLearning stack. Run once to create it:
-    #   docker network create aiinfra_net
-    # Then start AIInfraLearning with: --network aiinfra_net (see its docker-compose.prod.yml)
