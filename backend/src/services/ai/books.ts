@@ -272,6 +272,229 @@ export const BOOKS: BookTheory[] = [
       },
     ],
   },
+  {
+    id: 'seven-habits',
+    title: '《高效能人士的7个习惯》',
+    author: '史蒂芬·柯维',
+    authorBio:
+      '史蒂芬·柯维（Stephen R. Covey），美国管理学大师、教育家，被《时代》杂志评为全美最具影响力的 25 人之一。他长期研究个人领导力与效能，提出以原则为中心的成长框架，影响了全球数千万读者。',
+    intro:
+      '《高效能人士的7个习惯》是一部以"原则"为中心的个人成长经典。它把成长分为三个阶段：从依赖到独立（个人领域的成功）——积极主动、以终为始、要事第一；再从独立到互赖（公众领域的成功）——双赢思维、知彼解己、统合综效；最后是不断更新的"磨刀"习惯。它强调真正的改变是由内而外的，先修炼品格与心态，再谈方法与技巧。',
+    themes: ['work', 'self', 'gratitude'],
+    concepts: [
+      {
+        id: 'be-proactive',
+        name: '习惯一：积极主动',
+        gist: '在"刺激"与"回应"之间，人永远有选择的自由。与其被环境和情绪推着走，不如专注于自己能影响的"影响圈"，为自己的回应负责。',
+        appliesTo: '抱怨环境/他人、感到被动无力、把问题归咎于外部、焦虑',
+        chapter: '第一部分「重新探索自我」· 习惯一',
+        deepDive:
+          '柯维区分了"关注圈"（我们担心却无力改变的事，如天气、他人评价）和"影响圈"（我们能实际作用的事，如自己的态度与行动）。消极的人把精力耗在关注圈里抱怨，影响圈反而萎缩；积极主动的人专注影响圈，影响圈就会不断扩大。核心洞见是：在外界刺激和我们的回应之间，存在一段"选择的自由"——我们不是被发生的事决定，而是被我们对它的回应决定。把"我不得不"换成"我选择"，主动权就回到了自己手里。',
+        quotes: [
+          '“在刺激与回应之间，存在一段空间；成长与幸福的关键，就在于如何运用这段空间。”',
+          '“真正伤害我们的，并非遭遇本身，而是我们对遭遇的回应。”',
+        ],
+        reflectQuestions: [
+          '本周让你最烦心的那件事，属于"关注圈"还是"影响圈"？',
+          '把一句"我不得不……"改写成"我选择……"，感觉有什么不同？',
+        ],
+      },
+      {
+        id: 'begin-with-end',
+        name: '习惯二：以终为始',
+        gist: '凡事先在头脑中"创造"一遍，再动手实现。想清楚自己真正看重什么、想成为怎样的人，让日常的每个选择都朝着这个终点对齐。',
+        appliesTo: '目标感缺失、忙碌却空虚、不知为何而做、被琐事牵着走',
+        chapter: '第一部分 · 习惯二',
+        deepDive:
+          '柯维说，所有事物都被"创造"两次：先是头脑中的构思（心智的创造），再是付诸行动（实际的创造）。如果你不主动设计自己的人生剧本，就会被他人、环境或惯性替你写好。"以终为始"是请你先想清楚生命中真正重要的是什么——为此他建议写下个人"使命宣言"。当你心里有了清晰的终点，就有了一把尺子：每天的取舍、对诱惑的拒绝，都可以问"这是否让我更接近我想成为的人"。这让忙碌有了方向，不再是瞎忙。',
+        quotes: [
+          '“以终为始，意味着以你最深的价值观和方向作为衡量一切的标准。”',
+          '“如果梯子搭错了墙，每一步都只是更快地到达错误的地方。”',
+        ],
+        reflectQuestions: [
+          '如果一年后回望这一周，你希望自己最在意、最骄傲的是哪件事？',
+          '你本周的忙碌，有多少真正朝着你看重的方向？',
+        ],
+      },
+      {
+        id: 'first-things-first',
+        name: '习惯三：要事第一',
+        gist: '把时间投在"重要但不紧急"的第二象限（规划、成长、关系、健康），而不是被"紧急"牵着跑。先做最重要的事，而非最急的事。',
+        appliesTo: '总在救火、拖延重要的事、时间不够用、瞎忙、压力大',
+        chapter: '第一部分 · 习惯三',
+        deepDive:
+          '柯维用"时间管理矩阵"把事情按"重要/紧急"分成四象限。多数人困在第一象限（重要又紧急的危机）和第三象限（紧急但不重要的打扰）里疲于奔命。真正高效的人刻意投资第二象限——重要但不紧急的事：长远规划、能力提升、关系经营、锻炼身体。这些事不做不会立刻出事，却决定了你的人生质量；而持续投入第二象限，第一象限的危机反而会变少。要做到这点，需要的不是更快，而是有勇气对"紧急但不重要"的事说"不"。',
+        quotes: [
+          '“关键不在于安排时间表上的优先顺序，而在于把要事真正落实到行动。”',
+          '“高效能人士不把心思放在‘问题’上，而放在‘机会’上。”',
+        ],
+        reflectQuestions: [
+          '本周有哪件"重要但不紧急"的事，被紧急的杂事一再推后了？',
+          '你能对哪一件"紧急但不重要"的事，练习说一次"不"？',
+        ],
+      },
+      {
+        id: 'sharpen-the-saw',
+        name: '习惯七：不断更新（磨刀）',
+        gist: '持续在身体、心智、精神、社交情感四个维度自我更新，才能保有产出的能力。一味砍柴不磨刀，效率只会越来越低。',
+        appliesTo: '倦怠、过劳、忽略休息与健康、感觉被掏空、效率下降',
+        chapter: '第三部分「全面观照生命」· 习惯七',
+        deepDive:
+          '柯维讲了一个伐木工的故事：他拼命锯树却越来越慢，因为顾不上停下来磨锯子。"磨刀"就是从四个维度更新自己：身体（运动、营养、休息）、精神（价值观、独处、自然）、心智（阅读、学习、写作）、社交情感（共情、关系、贡献）。这是投资"产能"而非只顾"产出"。前面六个习惯能否持续，全靠这第七个习惯托底。对正感到疲惫、被掏空的人，这是温柔的提醒：照顾好自己，不是偷懒，而是为了走得更远。',
+        quotes: [
+          '“磨刀不误砍柴工——照顾好那个‘产出的人’，才是最大的产能投资。”',
+          '“真正的自我更新，是身体、心智、精神与情感四个方面的平衡发展。”',
+        ],
+        reflectQuestions: [
+          '本周你给身体、心智、精神、关系这四个方面，分别"磨刀"了吗？',
+          '哪一个维度被你忽略最久了？这周能补上一点点什么？',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'nvc',
+    title: '《非暴力沟通》',
+    author: '马歇尔·卢森堡',
+    authorBio:
+      '马歇尔·卢森堡（Marshall B. Rosenberg），美国临床心理学家，非暴力沟通（NVC）的创始人，国际非暴力沟通中心创办人。他一生致力于用沟通化解冲突，足迹遍及全球的学校、企业与战乱地区。',
+    intro:
+      '《非暴力沟通》提出一种"爱的语言"：通过观察、感受、需要、请求四个要素，让我们既诚实表达自己，又能带着同理心倾听他人。它揭示了日常语言中隐藏的"暴力"——评判、指责、比较、回避责任，并提供一套方法，把对抗式的沟通转化为彼此理解与连接，广泛应用于亲密关系、亲子、职场与冲突调解。',
+    themes: ['partner', 'friend', 'emotion', 'self'],
+    concepts: [
+      {
+        id: 'four-components',
+        name: '沟通四要素：观察·感受·需要·请求',
+        gist: '不带评判地说出"观察"，坦诚表达"感受"，连接背后的"需要"，再提出具体可行的"请求"。这四步把指责式沟通转化为彼此理解的连接。',
+        appliesTo: '想沟通却怕吵架、表达后对方更抵触、有话说不清、关系紧张',
+        chapter: '贯穿全书 · NVC 的四个要素',
+        deepDive:
+          '非暴力沟通的核心是一个四步模型。第一步"观察"：只描述事实，不掺评判（说"你这周有三晚十点后才回"，而不是"你总是不顾家"）。第二步"感受"：说出自己的情绪（"我感到孤单"），而非想法或指责。第三步"需要"：感受背后是某个未被满足的需要（"因为我需要陪伴"）——这是连接的关键，因为需要是人类共通的。第四步"请求"：提出具体、正向、可执行的请求（"这周能不能有一晚我们一起吃饭"），而非模糊的要求或命令。四步走下来，对话从"谁对谁错"的对抗，变成"我们各自需要什么"的合作。',
+        quotes: [
+          '“非暴力沟通的精髓，在于对这四个要素的觉察：观察、感受、需要、请求。”',
+          '“不带评论的观察，是人类智力的最高形式。”',
+        ],
+        reflectQuestions: [
+          '本周那次不太顺的对话，如果用"观察+感受+需要+请求"重说一遍，会怎么说？',
+          '你当时真正的"需要"是什么？有没有清楚地说出来？',
+        ],
+      },
+      {
+        id: 'observation-vs-evaluation',
+        name: '区分观察与评判',
+        gist: '把"事实"和"评判"分开。"你总是…""你太…"是评判，会激起防御；只陈述具体观察到的行为，对方才听得进去。',
+        appliesTo: '一开口就吵起来、被说"你又来了"、习惯用"总是/从不"、互相指责',
+        chapter: '第三章「区分观察和评论」',
+        deepDive:
+          '卢森堡引用克里希那穆提的话：不带评论的观察是人类智力的最高形式。我们的语言习惯里塞满了评判——"你很懒""他不负责任""你总是迟到"，这些标签一出口，对方第一反应是防御和反击，沟通就崩了。NVC 要求我们把镜头拉回具体事实："这个月你有四次会议迟到了十分钟以上"。事实是可核对的、不带攻击的，对方更容易承认和回应。注意"总是""从不""又"这类词，它们往往是评判混进观察的信号。先学会只描述发生了什么，沟通的火药味就少了一大半。',
+        quotes: [
+          '“将观察和评论混为一谈，人们会倾向于听到批评，并产生抗拒。”',
+          '“‘你总是…’这样的话，几乎注定让对话走向对抗。”',
+        ],
+        reflectQuestions: [
+          '最近一次冲突里，你说出口的是"事实"还是"评判"？',
+          '把那句带"总是/从不"的话，改成一句只讲具体事实的描述。',
+        ],
+      },
+      {
+        id: 'feelings-and-needs',
+        name: '感受源于需要（而非他人）',
+        gist: '别人的言行只是情绪的"诱因"，不是"原因"。我们的感受，根源在于自己未被满足的需要。看见需要，就不再一味指责对方。',
+        appliesTo: '觉得"都是对方让我生气"、情绪上头、把责任推给他人、受伤',
+        chapter: '第四章「体会和表达感受」· 第五章「感受的根源」',
+        deepDive:
+          '我们习惯说"你让我很生气""是他害我难过"——好像情绪是别人塞给我们的。NVC 提出一个关键转念：他人的行为是我们感受的"刺激"，但真正的"根源"是我们自己某个未被满足的需要。同一句话，需要被尊重的人听了会愤怒，需要不那么强的人可能毫无波澜。把"你让我生气"改成"你这样做时我很生气，因为我需要被在乎"，责任就从指责对方回到了照看自己的需要上。这不是压抑情绪，而是更准确地理解情绪从哪来——这样你既能为自己负责，也给了对方一个能回应的方向，而不是一记必须反击的攻击。',
+        quotes: [
+          '“他人的行为也许是我们感受的刺激，但并不是原因。”',
+          '“感受的根源在于我们自身的需要——这是为自己负责的开始。”',
+        ],
+        reflectQuestions: [
+          '本周让你情绪波动最大的一刻，背后是你哪个需要没被满足？',
+          '如果不把它归咎于对方，你可以怎样照看那个需要？',
+        ],
+      },
+      {
+        id: 'empathic-listening',
+        name: '同理心倾听',
+        gist: '倾听不是急着建议、安慰或评判，而是全然地体会对方的感受与需要。仅仅"被听见"，常常就已经是疗愈。',
+        appliesTo: '想安慰却帮倒忙、对方说"你根本不懂"、沟通变成讲道理、关系疏远',
+        chapter: '第七章「用全身心倾听」',
+        deepDive:
+          '当别人向我们倾诉，我们常急着做点什么：给建议（"你应该…"）、比惨（"我比你还惨"）、说教、否定情绪（"别想太多")。卢森堡说，这些反而堵住了连接。同理心倾听是放下自己的判断和"想帮忙"的冲动，全身心地去体会对方此刻的感受和需要——甚至只是默默地在场，或试着把你听到的复述回去（"你是不是觉得很委屈，因为希望被认可？"）。很多时候，人们要的不是解决方案，而是"我的感受被另一个人真正接住了"。这种被理解，本身就有疗愈的力量。',
+        quotes: [
+          '“也许我们并不需要做什么，只是同情地理解对方，就足够了。”',
+          '“倾听他人，意味着放下我们已有的想法和判断，全心全意地体会对方。”',
+        ],
+        reflectQuestions: [
+          '本周有人向你倾诉时，你是在"倾听"，还是急着给建议或评判？',
+          '如果只是安静地理解对方的感受和需要，对话会有什么不同？',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'elephant',
+    title: '《躲在蚊子后面的大象》',
+    author: '恩斯特·弗利德里希·施密特鲍尔',
+    authorBio:
+      '恩斯特·弗利德里希·施密特鲍尔（Ernst-Friedrich Schmidt-Bauer）与合著者，德国心理学者与心理治疗师。本书源自他们多年的咨询实践，专注于帮助人们识别"过度反应"背后被掩藏的真实情绪与早年创伤。',
+    intro:
+      '《躲在蚊子后面的大象》揭示了一个常见现象：当我们为一件小事（"蚊子"）反应过度时，背后往往藏着一头真正的"大象"——被触发的深层情绪、未被疗愈的旧伤或被忽视的核心需要。书中区分"原生情绪"与"被掩盖的情绪"，帮助读者顺着过激反应往回看，找到那头大象，从而理解自己为何如此，并真正安抚它，而不是继续和蚊子较劲。',
+    themes: ['emotion', 'self', 'partner', 'friend'],
+    concepts: [
+      {
+        id: 'mosquito-elephant',
+        name: '蚊子与大象：过度反应的信号',
+        gist: '当你为一件小事反应过激，那只是"蚊子"；强烈情绪的真正来源，是背后那头被它惊动的"大象"——更深的旧伤或未满足的需要。过激反应是一个向内看的信号。',
+        appliesTo: '为小事大动肝火、事后觉得"我怎么反应这么大"、情绪突然失控',
+        chapter: '全书核心隐喻',
+        deepDive:
+          '一只蚊子本不值得大动干戈，可有时它却让我们暴跳如雷——因为它惊动了背后那头一直潜伏的大象。书中说，当某件小事引发了与它"不成比例"的强烈情绪，这恰恰是最有价值的线索：真正让你痛的不是这件事本身，而是它触碰到的某个深层旧伤或核心需要（被尊重、被看见、安全感等）。与其继续和"蚊子"较劲（纠缠于事情对错），不如顺着情绪的强度往回追问：这头大象是什么？它从什么时候就在了？看见大象，情绪才有可能真正平息。',
+        quotes: [
+          '“当反应远超事件本身，那多出来的部分，属于另一头大象。”',
+          '“我们以为在为眼前的小事生气，其实是在为很久以前的某件事生气。”',
+        ],
+        reflectQuestions: [
+          '本周你有没有为一件小事反应特别大？那只"蚊子"背后，可能藏着哪头"大象"？',
+          '那股情绪的强度，让你想起更早的什么经历或未被满足的需要？',
+        ],
+      },
+      {
+        id: 'primary-vs-cover-emotion',
+        name: '原生情绪与掩盖情绪',
+        gist: '愤怒常是"掩盖情绪"，底下藏着更脆弱的"原生情绪"——受伤、害怕、孤单。看见并承认那个更柔软的真实情绪，才能从根上被安抚。',
+        appliesTo: '一生气就翻脸、用愤怒掩饰委屈/害怕、说不清自己到底在难受什么',
+        chapter: '关于情绪层次的论述',
+        deepDive:
+          '书中区分了两层情绪：表层的"掩盖情绪"（最常见的是愤怒、烦躁），和底下被它盖住的"原生情绪"（受伤、恐惧、羞耻、孤单、失望）。愤怒往往是一件"盔甲"——因为承认"我很受伤""我害怕被抛弃"太脆弱了，于是我们用更有力量感的愤怒把它盖起来。但盖住不等于消失，原生情绪不被看见，就会反复借由发火冒出来。疗愈的方向是：在情绪上头时轻轻问自己"愤怒底下，我其实是什么感觉？"——当那个更柔软、更真实的情绪被自己承认和接住，愤怒就失去了存在的必要。',
+        quotes: [
+          '“愤怒常常是一件盔甲，护着底下那个受伤、害怕的自己。”',
+          '“被看见的脆弱，才有机会被疗愈；被掩盖的情绪，只会反复发作。”',
+        ],
+        reflectQuestions: [
+          '本周你发火或烦躁的那一刻，愤怒底下其实藏着什么更柔软的感觉？',
+          '如果直接说出那个原生情绪（"我其实是觉得…"），会发生什么？',
+        ],
+      },
+      {
+        id: 'soothe-the-elephant',
+        name: '安抚大象，而非驱赶蚊子',
+        gist: '真正要回应的不是引发情绪的小事，而是背后那个深层需要。把精力从"争论对错"转向"照看自己真正需要的东西"，情绪才会平息。',
+        appliesTo: '反复因同类小事爆发、越纠缠对错越痛、想从根上处理情绪',
+        chapter: '关于自我安抚与疗愈',
+        deepDive:
+          '找到大象之后，关键不是去消灭那只蚊子（纠缠于"这件事到底谁对"），而是去安抚大象——回应那个深层的、一直没被照顾到的需要。比如你为伴侣一句无心的话大发雷霆，蚊子是那句话，大象可能是"我需要确认自己是被重视的"。这时和对方争论那句话有没有恶意，是在打蚊子；而温柔地承认"我需要被在乎"并去表达或满足它，才是安抚大象。当那个核心需要被自己看见、被恰当地照顾，同样的小事就再难掀起那么大的波澜。这是一种由内而外的情绪自主。',
+        quotes: [
+          '“你越是和蚊子较劲，那头大象就越是被忽略。”',
+          '“情绪平息的真正路径，是回应那个深层的需要，而不是赢得眼前的争论。”',
+        ],
+        reflectQuestions: [
+          '本周那件反复让你不舒服的小事，背后那个一直没被满足的需要是什么？',
+          '比起争论这件事的对错，你可以怎样先安抚一下自己那头"大象"？',
+        ],
+      },
+    ],
+  },
 ];
 
 export interface SelectedTheory {
@@ -306,41 +529,83 @@ export function findConcept(
  * the interface is stable so it can later be backed by RAG / live lookup.
  */
 export function selectRelevantTheories(a: WeeklyAnalysisResult, max = 3): SelectedTheory[] {
-  const selected: SelectedTheory[] = [];
-  const push = (bookId: string, conceptName: string) => {
-    const book = BOOKS.find((b) => b.id === bookId);
-    const concept = book?.concepts.find((c) => c.name === conceptName);
-    if (book && concept && !selected.some((s) => s.concept.name === conceptName)) {
-      selected.push({ bookId: book.id, bookTitle: book.title, author: book.author, concept });
-    }
-  };
+  // Collect all candidate (bookId, conceptName) matches in priority order, then
+  // pick a DIVERSE set: prefer covering different books before taking a 2nd
+  // concept from the same book — so newer books also get surfaced.
+  const candidates: Array<[string, string]> = [];
+  const add = (bookId: string, conceptName: string) => candidates.push([bookId, conceptName]);
 
   const anxious = (a.work.byEmotion?.anxious ?? 0) + (a.emotional.emotionDistribution?.anxious ?? 0);
   const hasPartner = a.totals.partner > 0;
   const unresolved = a.relationship.unresolvedArguments;
+  const hasRelationships = a.totals.partner + a.totals.friend > 0;
   const noRelationships = a.totals.partner + a.totals.friend === 0;
   const lowRating = a.emotional.avgOverallRating !== null && a.emotional.avgOverallRating <= 2.5;
   const highWork = a.totals.work >= 5;
+  const fewReflection = a.totals.reflectionDays <= 1;
 
-  // Relationship signals → 《亲密关系》
+  // Relationship → 《亲密关系》
   if (unresolved > 0) {
-    push('intimacy', '受害者监牢（受害者-迫害者-拯救者）');
-    push('intimacy', '关系的四个阶段');
+    add('intimacy', '受害者监牢（受害者-迫害者-拯救者）');
+    add('intimacy', '关系的四个阶段');
   }
-  if (hasPartner || a.totals.friend > 0) push('intimacy', '需求、期待与要求');
-  if (noRelationships) push('intimacy', '从"寻找爱"到"成为爱"');
+  if (hasPartner || a.totals.friend > 0) add('intimacy', '需求、期待与要求');
+  if (noRelationships) add('intimacy', '从"寻找爱"到"成为爱"');
 
-  // Self / emotion signals → 《被讨厌的勇气》
-  if (anxious >= 2) push('courage', '目的论（而非原因论）');
-  if (highWork || lowRating) push('courage', '甘于平凡的勇气');
-  if (lowRating) push('courage', '自卑情结 vs 健康的自卑');
-  if (noRelationships) push('courage', '共同体感觉与"贡献感"');
+  // Conflict / communication → 《非暴力沟通》
+  if (unresolved > 0) {
+    add('nvc', '区分观察与评判');
+    add('nvc', '沟通四要素：观察·感受·需要·请求');
+  }
+  if (lowRating || anxious >= 2) add('nvc', '感受源于需要（而非他人）');
+  if (hasRelationships) add('nvc', '同理心倾听');
 
-  // Always have at least a couple of grounding concepts.
-  if (selected.length < 2) {
-    push('courage', '课题分离');
-    push('intimacy', '伴侣是一面镜子（投射与触发）');
-    push('courage', '人生是连续的刹那（活在此时此刻）');
+  // Overreaction / hidden emotion → 《躲在蚊子后面的大象》
+  if (anxious >= 2 || unresolved > 0) add('elephant', '蚊子与大象：过度反应的信号');
+  if (lowRating || anxious >= 2) add('elephant', '原生情绪与掩盖情绪');
+  if (unresolved > 0) add('elephant', '安抚大象，而非驱赶蚊子');
+
+  // Work / effectiveness → 《高效能人士的7个习惯》
+  if (highWork) add('seven-habits', '习惯三：要事第一');
+  if (anxious >= 2 || lowRating) add('seven-habits', '习惯一：积极主动');
+  if (highWork && lowRating) add('seven-habits', '习惯七：不断更新（磨刀）');
+  if (fewReflection) add('seven-habits', '习惯二：以终为始');
+
+  // Self / emotion → 《被讨厌的勇气》
+  if (anxious >= 2) add('courage', '目的论（而非原因论）');
+  if (highWork || lowRating) add('courage', '甘于平凡的勇气');
+  if (lowRating) add('courage', '自卑情结 vs 健康的自卑');
+  if (noRelationships) add('courage', '共同体感觉与"贡献感"');
+
+  // Grounding defaults if nothing matched.
+  add('courage', '课题分离');
+  add('intimacy', '伴侣是一面镜子（投射与触发）');
+  add('seven-habits', '习惯三：要事第一');
+  add('nvc', '同理心倾听');
+
+  const resolve = (bookId: string, conceptName: string): SelectedTheory | null => {
+    const book = BOOKS.find((b) => b.id === bookId);
+    const concept = book?.concepts.find((c) => c.name === conceptName);
+    if (!book || !concept) return null;
+    return { bookId: book.id, bookTitle: book.title, author: book.author, concept };
+  };
+
+  // Two passes: first take at most one concept per book (diversity), then fill
+  // the rest from remaining candidates in priority order.
+  const selected: SelectedTheory[] = [];
+  const seenConcept = new Set<string>();
+  const seenBook = new Set<string>();
+  for (const [bid, cname] of candidates) {
+    if (selected.length >= max) break;
+    if (seenBook.has(bid) || seenConcept.has(cname)) continue;
+    const t = resolve(bid, cname);
+    if (t) { selected.push(t); seenBook.add(bid); seenConcept.add(cname); }
+  }
+  for (const [bid, cname] of candidates) {
+    if (selected.length >= max) break;
+    if (seenConcept.has(cname)) continue;
+    const t = resolve(bid, cname);
+    if (t) { selected.push(t); seenConcept.add(cname); }
   }
 
   return selected.slice(0, max);
