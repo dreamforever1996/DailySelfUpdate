@@ -6,7 +6,12 @@ import { OpenAiCompatibleProvider } from './openaiProvider';
 import { ClaudeProvider } from './claudeProvider';
 import type { AiProvider, ProviderName } from './types';
 import { BOOKS } from './books';
-import { QUOTE_SYSTEM_PROMPT, buildQuoteUserPrompt, parseQuote } from './quotePrompt';
+import {
+  QUOTE_SYSTEM_PROMPT,
+  buildQuoteUserPrompt,
+  parseQuote,
+  type CandidateBook,
+} from './quotePrompt';
 
 export type UserTier = 'free' | 'vip';
 
@@ -97,17 +102,41 @@ async function buildYesterdaySummary(userId: string): Promise<string> {
   }
 }
 
-async function candidateBooks(userId: string): Promise<string[]> {
+/**
+ * Build the full book library for the prompt: every book in BOOKS with its
+ * intro + the moods/scenes it fits (aggregated from concept.appliesTo), and a
+ * `reading` flag for books the user's recent weekly summary referenced
+ * (≈ books they're currently engaging with).
+ */
+async function candidateBooks(userId: string): Promise<CandidateBook[]> {
+  let readingTitles = new Set<string>();
   try {
     const extras = await getSavedExtras(userId, thisMondayIso());
-    const fromSummary = (extras.referencedBooks as Array<{ title?: string }>)
-      .map((b) => b?.title)
-      .filter((t): t is string => !!t);
-    if (fromSummary.length) return Array.from(new Set(fromSummary));
+    readingTitles = new Set(
+      (extras.referencedBooks as Array<{ title?: string }>)
+        .map((b) => b?.title)
+        .filter((t): t is string => !!t)
+    );
   } catch {
-    /* ignore */
+    /* ignore — fall back to no "reading" marks */
   }
-  return BOOKS.map((b) => b.title);
+
+  return BOOKS.map((b) => {
+    // Aggregate a few distinct moods/scenes this book speaks to.
+    const moods = Array.from(
+      new Set(b.concepts.flatMap((c) => c.appliesTo.split(/[、,，]/).map((s) => s.trim())))
+    )
+      .filter(Boolean)
+      .slice(0, 6)
+      .join('、');
+    return {
+      title: b.title,
+      author: b.author,
+      intro: (b.intro ?? '').slice(0, 120),
+      moods,
+      reading: readingTitles.has(b.title),
+    };
+  });
 }
 
 /**
